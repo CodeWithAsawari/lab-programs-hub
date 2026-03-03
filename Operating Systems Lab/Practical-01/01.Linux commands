@@ -1,0 +1,221 @@
+===========================================
+OPERATING SYSTEM LAB
+PRACTICAL 2
+Execute Basic Linux/Unix Commands
+===========================================
+
+
+-------------------------------------------
+PART A: FILE HANDLING COMMANDS
+-------------------------------------------
+
+1) Display Present Working Directory
+Command:
+pwd
+
+Description:
+Displays the current directory path.
+
+
+2) List Files and Directories
+Commands:
+ls
+ls -l
+ls -a
+
+Description:
+ls      - Lists files
+ls -l   - Long listing format
+ls -a   - Shows hidden files
+
+
+3) Create Directory
+Commands:
+mkdir oslab
+mkdir test1 test2
+
+Description:
+Creates new directories.
+
+
+4) Change Directory
+Commands:
+cd oslab
+cd ..
+
+Description:
+cd oslab  - Move into oslab folder
+cd ..     - Move one level back
+
+
+5) Create File
+Commands:
+touch file1.txt
+touch file2.txt
+
+Description:
+Creates empty files.
+
+
+6) Write into File
+Commands:
+nano file1.txt
+
+OR
+
+echo "Hello OS Lab" > file1.txt
+
+Description:
+Writes content inside the file.
+
+
+7) Display File Content
+Command:
+cat file1.txt
+
+Description:
+Displays the content of file.
+
+
+8) Copy File
+Command:
+cp file1.txt file3.txt
+
+Description:
+Copies file1.txt to file3.txt.
+
+
+9) Rename File
+Command:
+mv file3.txt newfile.txt
+
+Description:
+Renames file3.txt to newfile.txt.
+
+
+10) Delete File
+Command:
+rm newfile.txt
+
+Description:
+Deletes the file.
+
+
+11) Delete Directory
+Commands:
+rmdir test1
+rm -r oslab
+
+Description:
+rmdir     - Removes empty directory
+rm -r     - Removes directory with contents
+
+
+-------------------------------------------
+PART B: PERMISSION COMMANDS
+-------------------------------------------
+
+1) Check File Permissions
+Command:
+ls -l
+
+Description:
+Displays file permissions.
+
+
+2) Change Permission (Numeric Method)
+Commands:
+chmod 777 file1.txt
+chmod 755 file1.txt
+chmod 644 file1.txt
+
+Description:
+777 - Read, Write, Execute for all
+755 - Full access to owner, read/execute for others
+644 - Read/write for owner, read for others
+
+
+3) Change Permission (Symbolic Method)
+Commands:
+chmod u+x file1.txt
+chmod g-w file1.txt
+chmod o+r file1.txt
+
+Description:
+u - user
+g - group
+o - others
++ - add permission
+- - remove permission
+
+
+4) Change Ownership
+Command:
+sudo chown username file1.txt
+
+Description:
+Changes file owner.
+
+
+-------------------------------------------
+PART C: PROCESS CONTROL COMMANDS
+-------------------------------------------
+
+1) Display Running Processes
+Commands:
+ps
+ps -aux
+
+Description:
+Shows currently running processes.
+
+
+2) Real Time Process Monitoring
+Command:
+top
+
+Description:
+Displays dynamic process list.
+
+
+3) Run Process in Background
+Command:
+sleep 30 &
+
+Description:
+Runs process in background.
+
+
+4) Display Background Jobs
+Command:
+jobs
+
+Description:
+Shows background jobs.
+
+
+5) Kill Process
+Commands:
+ps
+kill PID
+kill -9 PID
+
+Description:
+kill PID      - Terminates process
+kill -9 PID   - Forcefully terminates process
+
+
+6) Bring Background Job to Foreground
+Command:
+fg %1
+
+Description:
+Brings job to foreground.
+
+
+===========================================
+RESULT:
+Successfully executed basic Linux/Unix
+commands for file handling, permissions,
+and process control.
+===========================================
